@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    --purple: #9011EE;
+    --darkblue: #2111EE;
+    --blue: #116FEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base */
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(17deg, rgba(2,0,36,1) 0%, 
+    rgba(9,9,121,1) 29%, rgba(0,212,255,1) 96%);  
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo{
+    /* margin-left: 5px; */
+    color: var(--vermelho);
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+}
+
+.logo .main{
+    color: var(--darkblue);
+}
+
+.container .logo .sub {
+    font-family:'Gill Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+header nav a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+header{
+    margin-bottom: 0.5%;
+    height: 5rem;
+    padding-top: 0.7%;
+}
+
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(212deg, rgba(0, 0, 0, 0.01) 50%, var(--darkblue) 120%), url("../img/capa-house.jpg");
+    color: white;
+    height: 30rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    border: black 0.5px solid;
+    outline: 5px solid white;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    font-size: 12px;
+    cursor: pointer; 
+    transition: .3s ease color, .3s ease background-color
+}
+
+.botao:hover{
+    color: black;
+    background-color: white;
+}
+
+.botao i{
+    margin-right: 0.5rem;
+}
+
+.filme-principal .container{
+    margin-left: 2%;
+    width: 80%
+}
+
+/* CAROUSEL */
+.carrosel-filmes{
+    position: relative;
+    margin-top: 2%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carrosel-filmes .description-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transition: background-color 0.2s;
+}
+
+.carrosel-filmes .botoes{
+    z-index: 0;
+    position: absolute;
+    bottom: -25%;
+    left: 10px;
+    transition: bottom 0.2s ease-in-out; 
+    /* border: 1px solid black; */
+}
+
+/* DESCRIPTION MOVIE WRAPPER OF MINIATURES */
+.description-wrapper:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 80%, var(--darkblue) 120%);
+}
+
+.description-wrapper:hover > .botoes{
+    bottom: 7%;
+}
+
+.description-wrapper:hover > .title {
+    top: 2%;
+} 
+
+.description-wrapper .title {
+    position: absolute;
+    top: -25%;
+    left: 2%;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    transition: top 0.2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
