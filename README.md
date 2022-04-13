@@ -10,8 +10,7 @@ Passos até chegar onde cheguei
 6. Todo o projeto foi ajustado para se manter responsivo com ajuda do media queries
 7. Busquei manter um padrão utilizando REM e % para medidas
 
-## Desktop
+## Responsividade
 <img src="img/demonstration1.gif">
 
-## Mobile
 <img src="img/demonstration2.gif">
