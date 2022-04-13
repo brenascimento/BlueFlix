@@ -9,3 +9,9 @@ Passos até chegar onde cheguei
 5. Adicionei um fundo em linear-gradient com a ajuda do [cssgradient.io](https://cssgradient.io/)
 6. Todo o projeto foi ajustado para se manter responsivo com ajuda do media queries
 7. Busquei manter um padrão utilizando REM e % para medidas
+
+## Desktop
+<img src="img/demonstration1.gif">
+
+## Mobile
+<img src="img/demonstration2.gif">
